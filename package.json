@@ -1,0 +1,19 @@
+{
+  "name": "b2w-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Renan Soares",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1",
+    "sucrase": "^3.10.1"
+  }
+}
