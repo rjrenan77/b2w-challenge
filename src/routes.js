@@ -1,15 +1,15 @@
-import {Router} from "express";
-import PlanetController from "./controllers/PlanetController"
+import { Router } from 'express';
+import PlanetController from './controllers/PlanetController';
 
 const routes = new Router();
 
-routes.get("/planet", PlanetController.index);
+routes.get('/planet', PlanetController.index);
 //ver depois
-routes.get("/planetpername", PlanetController.showName);
-routes.get("/:planetId", PlanetController.showIndex);
+routes.get('/planetpername', PlanetController.showName);
+routes.get('/:planetId', PlanetController.showIndex);
 
-routes.post("/planet", PlanetController.store);
+routes.post('/planet', PlanetController.store);
 
-routes.delete("/:planetId", PlanetController.delete);
+routes.delete('/:planetId', PlanetController.delete);
 
 export default routes;

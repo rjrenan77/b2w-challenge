@@ -1,4 +1,4 @@
-import mongoose from "../database";
+import mongoose from '../database';
 
 const PlanetSchema = new mongoose.Schema({
   name: {
@@ -22,10 +22,9 @@ const PlanetSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-  }
-
+  },
 });
 
-const Planet = mongoose.model("Planet", PlanetSchema);
+const Planet = mongoose.model('Planet', PlanetSchema);
 
 export default Planet;
